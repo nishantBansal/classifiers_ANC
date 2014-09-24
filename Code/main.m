@@ -1,10 +1,10 @@
 function [ cm_bayes, cm_lms, cm_weiner, bayes_acc, lms_acc, weiner_acc, mse ] = main(  )
     
-    plot_flag = 1;
+    plot_flag = 1; % =0 to disable all the plots
     meu = [ 0 2.5; 0 0 ];
     sigma = [ 1 0; 0 1 ];
-    dataset = dataset_2( meu, sigma, 1000, -plot_flag );
-    testset = dataset_2( meu, sigma, 100, plot_flag );
+    dataset = getDataset( meu, sigma, 1000, -plot_flag );
+    testset = getDataset( meu, sigma, 100, plot_flag );
     
     % classification using Bayes
     y_bayes = Bayes_classifier(  dataset, testset(:, 1:2), meu);
