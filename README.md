@@ -1,4 +1,4 @@
-classifiers_ANC
+Classifiers (Artificial Neural Computation)
 ===============
 
 The purpose of this project is to implement Bayesian, LMS and Weiner Filter to classify two 2-D Gaussian Cluster data set.
@@ -18,5 +18,5 @@ Notes:
   3. The training dataset contains 1000 data points from each cluster.
   4. The test set consist of 100 data points from each cluster.
   
-** These values can be easily changed in main.m to play with the classifers.
-** It is interesting to play with different values and I personally encourage that.
+  ** These values can be easily changed in main.m to play with the classifers.
+  ** It is interesting to play with different values and I personally encourage that.
